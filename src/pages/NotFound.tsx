@@ -1,5 +1,6 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import GlassCard from "@/components/GlassCard";
 
 const NotFound = () => {
   const location = useLocation();
@@ -9,14 +10,16 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-muted">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>
-        <a href="/" className="text-primary underline hover:text-primary/90">
-          Return to Home
-        </a>
-      </div>
+    <div className="relative min-h-screen flex items-center justify-center px-6 pt-20">
+      <GlassCard className="p-12 text-center max-w-md">
+        <h1 className="font-display text-6xl text-white mb-4">404</h1>
+        <p className="font-accent italic text-xl text-white/70 mb-8">
+          Oops! This page seems to have drifted away like morning frost.
+        </p>
+        <Link to="/" className="btn-primary inline-block">
+          Return Home
+        </Link>
+      </GlassCard>
     </div>
   );
 };
