@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useRef } from 'react';
 
 interface HomeVideoLoadingProps {
   onComplete: () => void;
@@ -6,23 +6,15 @@ interface HomeVideoLoadingProps {
 
 const HomeVideoLoading = ({ onComplete }: HomeVideoLoadingProps) => {
   const [phase, setPhase] = useState<'playing' | 'dissolving' | 'done'>('playing');
+  const videoRef = useRef<HTMLVideoElement>(null);
 
-  useEffect(() => {
-    // Video plays for ~4s, then dissolve
-    const dissolveTimer = setTimeout(() => {
-      setPhase('dissolving');
-    }, 4000);
-
-    const completeTimer = setTimeout(() => {
+  const handleVideoEnd = () => {
+    setPhase('dissolving');
+    setTimeout(() => {
       setPhase('done');
       onComplete();
-    }, 4700);
-
-    return () => {
-      clearTimeout(dissolveTimer);
-      clearTimeout(completeTimer);
-    };
-  }, [onComplete]);
+    }, 700);
+  };
 
   if (phase === 'done') return null;
 
@@ -34,9 +26,11 @@ const HomeVideoLoading = ({ onComplete }: HomeVideoLoadingProps) => {
     >
       {/* Video Background */}
       <video
+        ref={videoRef}
         autoPlay
         muted
         playsInline
+        onEnded={handleVideoEnd}
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src="/home-loading.mp4" type="video/mp4" />
