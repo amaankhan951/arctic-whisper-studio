@@ -9,6 +9,7 @@ import WinterBackground from "@/components/WinterBackground";
 import SnowCanvas from "@/components/SnowCanvas";
 import Navigation from "@/components/Navigation";
 import LoadingScreen from "@/components/LoadingScreen";
+import HomeVideoLoading from "@/components/HomeVideoLoading";
 import Footer from "@/components/Footer";
 
 import Home from "@/pages/Home";
@@ -47,16 +48,22 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-// Initial loading wrapper
+// Initial loading wrapper - shows video loading for home, regular for other pages
 const InitialLoadingWrapper = ({ children }: { children: React.ReactNode }) => {
   const [initialLoadComplete, setInitialLoadComplete] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   if (!initialLoadComplete) {
     return (
       <>
         <WinterBackground />
         <SnowCanvas />
-        <LoadingScreen onComplete={() => setInitialLoadComplete(true)} />
+        {isHomePage ? (
+          <HomeVideoLoading onComplete={() => setInitialLoadComplete(true)} />
+        ) : (
+          <LoadingScreen onComplete={() => setInitialLoadComplete(true)} />
+        )}
       </>
     );
   }
