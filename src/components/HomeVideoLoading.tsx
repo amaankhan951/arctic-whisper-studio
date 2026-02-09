@@ -1,25 +1,27 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 interface HomeVideoLoadingProps {
   onComplete: () => void;
 }
 
 const HomeVideoLoading = ({ onComplete }: HomeVideoLoadingProps) => {
-  const [phase, setPhase] = useState<'playing' | 'dissolving' | 'done'>('playing');
+  const [phase, setPhase] = useState<'playing' | 'fading' | 'done'>('playing');
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    // Video plays for ~4s, then dissolve
-    const dissolveTimer = setTimeout(() => {
-      setPhase('dissolving');
-    }, 4000);
+    // Gate opens around 3.2s — start crossfade then
+    const fadeTimer = setTimeout(() => {
+      setPhase('fading');
+    }, 3200);
 
+    // After the crossfade completes, remove the overlay
     const completeTimer = setTimeout(() => {
       setPhase('done');
       onComplete();
-    }, 4700);
+    }, 4400);
 
     return () => {
-      clearTimeout(dissolveTimer);
+      clearTimeout(fadeTimer);
       clearTimeout(completeTimer);
     };
   }, [onComplete]);
@@ -27,13 +29,16 @@ const HomeVideoLoading = ({ onComplete }: HomeVideoLoadingProps) => {
   if (phase === 'done') return null;
 
   return (
-    <div 
-      className={`fixed inset-0 z-[100] flex items-center justify-center transition-opacity duration-700 ${
-        phase === 'dissolving' ? 'opacity-0' : 'opacity-100'
-      }`}
+    <div
+      className="fixed inset-0 z-[100]"
+      style={{
+        opacity: phase === 'fading' ? 0 : 1,
+        transition: 'opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+        pointerEvents: phase === 'fading' ? 'none' : 'auto',
+      }}
     >
-      {/* Video Background */}
       <video
+        ref={videoRef}
         autoPlay
         muted
         playsInline
@@ -41,11 +46,6 @@ const HomeVideoLoading = ({ onComplete }: HomeVideoLoadingProps) => {
       >
         <source src="/home-loading.mp4" type="video/mp4" />
       </video>
-
-      {/* Frost dissolve effect */}
-      {phase === 'dissolving' && (
-        <div className="absolute inset-0 bg-white animate-frost-dissolve" />
-      )}
     </div>
   );
 };
