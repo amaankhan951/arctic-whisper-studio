@@ -75,9 +75,14 @@ const ProductCard = ({ packSize, price, isPopular = false, animationDelay }: Pro
         <p className="font-display text-3xl font-bold text-white pt-2">{price}</p>
 
         {/* Add to Cart Button */}
-        <button className="btn-glass w-full mt-2 text-sm">
+        <a 
+          href="https://www.amazon.in/dp/B0G1KN6Y55?th=1" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="btn-glass w-full mt-2 text-sm inline-block text-center"
+        >
           Add to Cart
-        </button>
+        </a>
       </div>
     </div>
   );
