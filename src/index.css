@@ -140,8 +140,8 @@
   /* ===== BUTTONS ===== */
   .btn-glass {
     @apply relative overflow-hidden px-11 py-4 rounded-full font-medium uppercase tracking-widest text-sm;
-    background: hsl(0 0% 100% / 0.12);
-    border: 1px solid hsl(0 0% 100% / 0.32);
+    background: hsl(0 0% 100% / 0.18);
+    border: 1px solid hsl(0 0% 100% / 0.38);
     color: white;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -150,7 +150,7 @@
   }
 
   .btn-glass:hover {
-    background: hsl(0 0% 100% / 0.22);
+    background: hsl(0 0% 100% / 0.28);
     box-shadow: 0 0 28px hsl(191 64% 85% / 0.4);
     transform: scale(1.04);
   }
@@ -233,7 +233,7 @@
     @apply inline-block px-3 py-1.5 rounded-full text-xs uppercase tracking-wide;
     background: hsl(0 0% 100% / 0.08);
     border: 1px solid hsl(0 0% 100% / 0.18);
-    color: hsl(0 0% 100% / 0.8);
+    color: hsl(0 0% 100% / 0.92);
   }
 }
 
@@ -397,7 +397,7 @@
 
   /* Text on glass - always light */
   .text-on-glass {
-    color: hsl(0 0% 100% / 0.88);
+    color: hsl(0 0% 100% / 0.95);
   }
 
   /* Smooth calm easing */

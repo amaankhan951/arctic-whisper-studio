@@ -76,7 +76,7 @@ const Navigation = () => {
               className={`font-body text-sm uppercase tracking-[1.5px] transition-all duration-300 ${
                 isActive(link.to)
                   ? 'text-white opacity-100 [text-shadow:0_0_12px_hsl(191,64%,85%)]'
-                  : 'text-white/80 hover:text-white hover:opacity-100 hover:scale-[1.03] hover:[text-shadow:0_0_8px_hsl(191,64%,85%)]'
+                  : 'text-white/90 hover:text-white hover:opacity-100 hover:scale-[1.03] hover:[text-shadow:0_0_8px_hsl(191,64%,85%)]'
               }`}
             >
               {link.label}
@@ -112,7 +112,7 @@ const Navigation = () => {
                 className={`font-body text-base uppercase tracking-[1.5px] py-3 transition-all duration-300 ${
                   isActive(link.to)
                     ? 'text-white [text-shadow:0_0_12px_hsl(191,64%,85%)]'
-                    : 'text-white/80'
+                    : 'text-white/90'
                 }`}
                 style={{
                   opacity: isMobileMenuOpen ? 1 : 0,
