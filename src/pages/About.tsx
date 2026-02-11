@@ -59,13 +59,13 @@ const About = () => {
               <GlassCard className="p-8 lg:p-10 h-full" hover={false}>
                 {/* Pull Quote */}
                 <div className="border-l-[3px] border-pine pl-6 mb-8">
-                  <p className="font-accent italic text-xl lg:text-2xl text-white/90 leading-relaxed">
+                  <p className="font-accent italic text-xl lg:text-2xl text-sage leading-relaxed">
                     In every Indian household, there's a memory tied to the simplest act of care.
                   </p>
                 </div>
 
                 {/* Body Text */}
-                <div className="space-y-5 font-body text-base text-white leading-[1.85]">
+                <div className="space-y-5 font-body text-base text-sage leading-[1.85]">
                   <p>
                     A mother gently placing a damp cloth on her child's forehead, a grandfather wiping his hands before sharing a mango, or a sibling passing a cool towel after an afternoon of cricket in the sun.
                   </p>
@@ -123,7 +123,7 @@ const About = () => {
                     {item.icon}
                   </div>
                   <h3 className="font-display text-xl text-white mb-3">{item.title}</h3>
-                  <p className="font-body text-sm text-white/90">{item.description}</p>
+                  <p className="font-body text-sm text-sage">{item.description}</p>
                 </GlassCard>
               </ScrollReveal>
             ))}
@@ -140,7 +140,7 @@ const About = () => {
             <GlassCard className="p-10 text-center" hover={false}>
               <h3 className="font-display text-2xl text-white mb-4">Our Vision</h3>
               <div className="accent-line w-16 mx-auto mb-6" />
-              <p className="font-accent italic text-xl text-white/95 leading-relaxed">
+              <p className="font-accent italic text-xl text-sage leading-relaxed">
                 "To become the world's most trusted name in natural, sustainable personal care — rooted in Indian tradition, loved globally."
               </p>
             </GlassCard>
