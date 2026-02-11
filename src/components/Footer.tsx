@@ -35,10 +35,10 @@ const Footer = () => {
                   THANDA KAPDA CO.
                 </span>
               </div>
-              <p className="font-accent italic text-white/90 text-sm">
+              <p className="font-accent italic text-sage text-sm">
                 Essence of Pure Indulgence
               </p>
-              <p className="font-body text-sm text-white/80 leading-relaxed max-w-xs">
+              <p className="font-body text-sm text-sage leading-relaxed max-w-xs">
                 Eco-friendly wet wipes inspired by timeless Indian traditions. Pure, natural, and sustainable.
               </p>
             </div>
@@ -56,7 +56,7 @@ const Footer = () => {
                   <Link
                     key={link.to}
                     to={link.to}
-                    className="font-body text-sm text-white/80 hover:text-white transition-all duration-300 hover:[text-shadow:0_0_8px_hsl(191,64%,85%)] w-fit"
+                    className="font-body text-sm text-sage hover:text-glacier transition-all duration-300 hover:[text-shadow:0_0_8px_hsl(191,64%,85%)] w-fit"
                   >
                     {link.label}
                   </Link>
