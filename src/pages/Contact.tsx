@@ -99,7 +99,7 @@ const Contact = () => {
                       <Phone size={18} />
                     </div>
                     <div>
-                      <p className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Mobile</p>
+                      <p className="font-body text-xs text-white/70 uppercase tracking-wide mb-1">Mobile</p>
                       <p className="font-body text-white group-hover:text-glacier transition-colors">+91 91755 40053</p>
                     </div>
                   </a>
@@ -113,7 +113,7 @@ const Contact = () => {
                       <Mail size={18} />
                     </div>
                     <div>
-                      <p className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Email</p>
+                      <p className="font-body text-xs text-white/70 uppercase tracking-wide mb-1">Email</p>
                       <p className="font-body text-white group-hover:text-glacier transition-colors">thandakapda@gmail.com</p>
                     </div>
                   </a>
@@ -129,7 +129,7 @@ const Contact = () => {
                       <Instagram size={18} />
                     </div>
                     <div>
-                      <p className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Instagram</p>
+                      <p className="font-body text-xs text-white/70 uppercase tracking-wide mb-1">Instagram</p>
                       <p className="font-body text-white group-hover:text-glacier transition-colors">@thandakapda.co</p>
                     </div>
                   </a>
@@ -143,7 +143,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-display text-lg text-white">Available Worldwide</p>
-                      <p className="font-body text-sm text-white/60">Expanding globally, coming soon near you.</p>
+                      <p className="font-body text-sm text-white/80">Expanding globally, coming soon near you.</p>
                     </div>
                   </div>
                 </div>
@@ -247,7 +247,7 @@ const Contact = () => {
                       openFaq === index ? 'max-h-40 mt-4 opacity-100' : 'max-h-0 opacity-0'
                     }`}
                   >
-                    <p className="font-body text-white/75 leading-relaxed">{faq.answer}</p>
+                    <p className="font-body text-white/90 leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
               </ScrollReveal>

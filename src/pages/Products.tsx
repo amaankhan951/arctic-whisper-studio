@@ -48,7 +48,7 @@ const Products = () => {
             <h2 className="font-display text-[clamp(28px,4vw,42px)] text-white mb-4">
               Premium Wet Wipes
             </h2>
-            <p className="font-body text-white/70 max-w-xl mx-auto">
+            <p className="font-body text-white/90 max-w-xl mx-auto">
               Infused with natural aloe extracts to gently cleanse and refresh your skin.
             </p>
           </ScrollReveal>
@@ -106,7 +106,7 @@ const Products = () => {
                     {item.icon}
                   </div>
                   <h3 className="font-display text-xl text-white mb-3">{item.title}</h3>
-                  <p className="font-body text-sm text-white/75">{item.description}</p>
+                  <p className="font-body text-sm text-white/90">{item.description}</p>
                 </GlassCard>
               </ScrollReveal>
             ))}
