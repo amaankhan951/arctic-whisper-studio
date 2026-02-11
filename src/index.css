@@ -22,10 +22,10 @@
     --mist: 213 33% 94%;
     
     /* Glass Properties */
-    --glass-bg: 0 0% 100% / 0.10;
-    --glass-bg-hover: 0 0% 100% / 0.18;
-    --glass-border: 0 0% 100% / 0.22;
-    --glass-border-glow: 191 64% 85% / 0.45;
+    --glass-bg: 0 0% 100% / 0.18;
+    --glass-bg-hover: 0 0% 100% / 0.26;
+    --glass-border: 0 0% 100% / 0.30;
+    --glass-border-glow: 191 64% 85% / 0.55;
     --shadow-depth: 150 32% 18% / 0.18;
     
     /* ===== SEMANTIC TOKENS ===== */
@@ -172,9 +172,9 @@
 
   /* ===== INPUTS ===== */
   .input-glass {
-    @apply w-full px-5 py-4 rounded-2xl text-white placeholder:text-white/40;
-    background: hsl(0 0% 100% / 0.07);
-    border: 1px solid hsl(0 0% 100% / 0.18);
+    @apply w-full px-5 py-4 rounded-2xl text-white placeholder:text-white/55;
+    background: hsl(0 0% 100% / 0.12);
+    border: 1px solid hsl(0 0% 100% / 0.25);
     font-family: 'DM Sans', sans-serif;
     font-size: 15px;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
