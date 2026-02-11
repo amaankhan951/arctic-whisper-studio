@@ -35,10 +35,10 @@ const Footer = () => {
                   THANDA KAPDA CO.
                 </span>
               </div>
-              <p className="font-accent italic text-white/70 text-sm">
+              <p className="font-accent italic text-white/90 text-sm">
                 Essence of Pure Indulgence
               </p>
-              <p className="font-body text-sm text-white/60 leading-relaxed max-w-xs">
+              <p className="font-body text-sm text-white/80 leading-relaxed max-w-xs">
                 Eco-friendly wet wipes inspired by timeless Indian traditions. Pure, natural, and sustainable.
               </p>
             </div>
@@ -56,7 +56,7 @@ const Footer = () => {
                   <Link
                     key={link.to}
                     to={link.to}
-                    className="font-body text-sm text-white/60 hover:text-white transition-all duration-300 hover:[text-shadow:0_0_8px_hsl(191,64%,85%)] w-fit"
+                    className="font-body text-sm text-white/80 hover:text-white transition-all duration-300 hover:[text-shadow:0_0_8px_hsl(191,64%,85%)] w-fit"
                   >
                     {link.label}
                   </Link>
@@ -79,9 +79,9 @@ const Footer = () => {
                 </a>
                 <a 
                   href="mailto:thandakapda@gmail.com" 
-                  className="flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300 group"
+                  className="flex items-center gap-3 text-white/80 hover:text-white transition-colors duration-300 group"
                 >
-                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                  <div className="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors">
                     <Mail size={16} />
                   </div>
                   <span className="font-body text-sm">thandakapda@gmail.com</span>
@@ -90,7 +90,7 @@ const Footer = () => {
                   href="https://www.instagram.com/thandakapda.co" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-white/60 hover:text-white transition-all duration-300 group"
+                  className="flex items-center gap-3 text-white/80 hover:text-white transition-all duration-300 group"
                 >
                   <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-glacier group-hover:scale-115 group-hover:shadow-[0_0_16px_hsl(191,64%,85%,0.5)] transition-all duration-300">
                     <Instagram size={16} />
@@ -103,7 +103,7 @@ const Footer = () => {
 
           {/* Bottom Bar */}
           <div className="mt-10 pt-6 border-t border-white/10 text-center">
-            <p className="font-body text-xs text-white/40">
+            <p className="font-body text-xs text-white/65">
               © 2026 Thanda Kapda Co. All rights reserved.
             </p>
           </div>
