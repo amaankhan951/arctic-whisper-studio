@@ -15,17 +15,20 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast.success("Message sent! We'll get back to you soon.", {
+
+    const subject = encodeURIComponent(`${formData.subject} from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone || 'N/A'}\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}`
+    );
+    window.open(`mailto:thandakapda@gmail.com?subject=${subject}&body=${body}`, '_self');
+
+    toast.success("Your email client has been opened!", {
       duration: 3500,
     });
-    
+
     setFormData({ name: '', email: '', phone: '', subject: 'General Inquiry', message: '' });
     setIsSubmitting(false);
   };

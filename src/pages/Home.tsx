@@ -28,17 +28,20 @@ const Home = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast.success("Thank you! We'll be in touch.", {
+
+    const subject = encodeURIComponent(`Appointment Request from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone || 'N/A'}\nPreferred Date: ${formData.date || 'N/A'}\n\nMessage:\n${formData.message || 'N/A'}`
+    );
+    window.open(`mailto:thandakapda@gmail.com?subject=${subject}&body=${body}`, '_self');
+
+    toast.success("Thank you! Your email client has been opened.", {
       duration: 3500,
     });
-    
+
     setFormData({ name: '', email: '', phone: '', date: '', message: '' });
     setIsSubmitting(false);
   };
