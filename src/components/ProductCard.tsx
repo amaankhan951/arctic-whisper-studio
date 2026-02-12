@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import productImage from '@/assets/product-wipes.png';
+import productImage from '@/assets/thanda-kapda-product.jpg';
 
 interface ProductCardProps {
   packSize: number;
@@ -81,7 +81,7 @@ const ProductCard = ({ packSize, price, isPopular = false, animationDelay }: Pro
           rel="noopener noreferrer" 
           className="btn-glass w-full mt-2 text-sm inline-block text-center"
         >
-          Add to Cart
+          Buy Now
         </a>
       </div>
     </div>

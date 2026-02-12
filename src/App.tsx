@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -71,11 +71,22 @@ const InitialLoadingWrapper = ({ children }: { children: React.ReactNode }) => {
   return <>{children}</>;
 };
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 const AppContent = () => {
   return (
     <div className="relative min-h-screen flex flex-col">
       <WinterBackground />
       <SnowCanvas />
+      <ScrollToTop />
       <Navigation />
       
       <main className="flex-1 relative z-10">
