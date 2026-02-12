@@ -50,7 +50,7 @@ const Products = () => {
             </p>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-sm mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto justify-items-center">
             {products.map((product, index) => (
               <ScrollReveal key={product.packSize} delay={index * 120}>
                 <ProductCard

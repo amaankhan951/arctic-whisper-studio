@@ -13,7 +13,7 @@ const ProductCard = ({ packSize, price, isPopular = false, animationDelay }: Pro
 
   return (
     <div 
-      className="glass-card p-6 flex flex-col items-center gap-4 relative"
+      className="glass-card p-8 flex flex-col items-center gap-6 relative w-full max-w-sm"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -25,7 +25,7 @@ const ProductCard = ({ packSize, price, isPopular = false, animationDelay }: Pro
       )}
 
       {/* 3D Product Showcase */}
-      <div className="relative w-44 h-44 flex items-center justify-center perspective-600">
+      <div className="relative w-56 h-56 flex items-center justify-center perspective-600">
         {/* Ambient Glow */}
         <div 
           className={`absolute inset-0 rounded-full blur-2xl transition-all duration-500 ${
@@ -40,7 +40,7 @@ const ProductCard = ({ packSize, price, isPopular = false, animationDelay }: Pro
         <img
           src={productImage}
           alt={`Premium Wet Wipes Pack of ${packSize}`}
-          className={`relative z-10 w-36 h-36 object-contain drop-shadow-2xl transition-all duration-500 ${
+          className={`relative z-10 w-48 h-48 object-contain drop-shadow-2xl transition-all duration-500 ${
             isHovered ? 'animate-float-product-fast' : 'animate-float-product'
           }`}
           style={{
@@ -51,10 +51,10 @@ const ProductCard = ({ packSize, price, isPopular = false, animationDelay }: Pro
       </div>
 
       {/* Product Info */}
-      <div className="text-center space-y-3 w-full">
-        <h3 className="font-display text-xl text-white">Premium Wet Wipes</h3>
+      <div className="text-center space-y-4 w-full">
+        <h3 className="font-display text-2xl text-white">Premium Wet Wipes</h3>
         
-        <span className="inline-block px-3 py-1 rounded-full text-xs font-body text-glacier bg-white/10 border border-white/20">
+        <span className="inline-block px-4 py-1.5 rounded-full text-sm font-body text-glacier bg-white/10 border border-white/20">
           Pack of {packSize}
         </span>
 
@@ -74,7 +74,7 @@ const ProductCard = ({ packSize, price, isPopular = false, animationDelay }: Pro
         {/* Price */}
         <p className="font-display text-3xl font-bold text-white pt-2">{price}</p>
 
-        {/* Add to Cart Button */}
+        {/* Buy Now Button */}
         <a 
           href="https://www.amazon.in/dp/B0G1KN6Y55?th=1" 
           target="_blank" 
