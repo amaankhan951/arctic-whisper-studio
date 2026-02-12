@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ScrollReveal from '@/components/ScrollReveal';
 import GlassCard from '@/components/GlassCard';
-import { Phone, Mail, Instagram, Globe, ChevronDown } from 'lucide-react';
+import { Phone, Mail, Instagram, Globe, ChevronDown, MessageCircle } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Contact = () => {
@@ -121,6 +121,22 @@ const Contact = () => {
                     </div>
                   </a>
 
+                  {/* WhatsApp */}
+                  <a 
+                    href="https://wa.me/919175540053?text=Hi%20Thanda%20Kapda%2C%20I%20have%20a%20query." 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 group"
+                  >
+                    <div className="w-[42px] h-[42px] rounded-full bg-white/10 flex items-center justify-center text-white/80 group-hover:bg-[hsl(142,70%,45%)] group-hover:scale-[1.15] group-hover:shadow-[0_0_16px_hsl(142,70%,45%,0.5)] transition-all duration-300">
+                      <MessageCircle size={18} />
+                    </div>
+                    <div>
+                      <p className="font-body text-xs text-white/70 uppercase tracking-wide mb-1">WhatsApp</p>
+                      <p className="font-body text-white group-hover:text-glacier transition-colors">+91 91755 40053</p>
+                    </div>
+                  </a>
+
                   {/* Instagram */}
                   <a 
                     href="https://www.instagram.com/thandakapda.co" 
@@ -208,6 +224,15 @@ const Contact = () => {
                   >
                     {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
+                  <a
+                    href="https://wa.me/919175540053?text=Hi%20Thanda%20Kapda%2C%20I%20have%20a%20query."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-glass w-full text-center flex items-center justify-center gap-2"
+                  >
+                    <MessageCircle size={16} />
+                    Or Message on WhatsApp
+                  </a>
                 </form>
               </GlassCard>
             </ScrollReveal>
