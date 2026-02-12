@@ -58,7 +58,7 @@ const ProductCard = ({ packSize, price, isPopular = false, animationDelay }: Pro
           Pack of {packSize}
         </span>
 
-        <p className="font-body text-sm text-sage leading-relaxed">
+        <p className="font-body text-sm text-white/90 leading-relaxed">
           Infused with natural aloe extracts to gently cleanse and refresh your skin.
         </p>
 

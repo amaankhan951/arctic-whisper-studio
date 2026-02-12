@@ -78,7 +78,7 @@ const Home = () => {
           </h1>
           
           <p 
-            className="font-accent italic text-[clamp(17px,2.2vw,23px)] text-sage max-w-2xl mx-auto mb-10 opacity-0 animate-fade-slide-up"
+            className="font-accent italic text-[clamp(17px,2.2vw,23px)] text-white/95 max-w-2xl mx-auto mb-10 opacity-0 animate-fade-slide-up"
             style={{ animationDelay: '1.2s', animationFillMode: 'forwards' }}
           >
             Eco-friendly, paraben-free, and alcohol-free wet wipes inspired by timeless Indian rituals.
@@ -115,7 +115,7 @@ const Home = () => {
             <h2 className="font-display text-[clamp(28px,4vw,46px)] text-white mb-4">
               Why Choose Thanda Kapda?
             </h2>
-            <p className="font-accent italic text-xl text-sage">
+            <p className="font-accent italic text-xl text-white/90">
               Rooted in nature. Refined for you.
             </p>
           </ScrollReveal>
@@ -147,7 +147,7 @@ const Home = () => {
                     {item.icon}
                   </div>
                   <h3 className="font-display text-xl text-white mb-3">{item.title}</h3>
-                  <p className="font-body text-sm text-sage leading-relaxed">{item.description}</p>
+                  <p className="font-body text-sm text-white/90 leading-relaxed">{item.description}</p>
                 </GlassCard>
               </ScrollReveal>
             ))}
@@ -184,7 +184,7 @@ const Home = () => {
             <ScrollReveal delay={150}>
               <GlassCard className="p-8">
                 <h3 className="font-display text-2xl text-white mb-4">Cooling Rituals</h3>
-                <p className="font-body text-sage leading-relaxed">
+                <p className="font-body text-white/90 leading-relaxed">
                   Wet wipes designed to refresh, restore, and reconnect you with the ancient art of care.
                 </p>
               </GlassCard>
@@ -193,7 +193,7 @@ const Home = () => {
             <ScrollReveal delay={300}>
               <GlassCard className="p-8">
                 <h3 className="font-display text-2xl text-white mb-4">Sustainable Living</h3>
-                <p className="font-body text-sage leading-relaxed">
+                <p className="font-body text-white/90 leading-relaxed">
                   Every product is a step toward a cleaner, greener tomorrow. No compromises on quality.
                 </p>
               </GlassCard>
@@ -226,7 +226,7 @@ const Home = () => {
                     {item.icon}
                   </div>
                   <h3 className="font-display text-lg text-white mb-2">{item.title}</h3>
-                  <p className="font-body text-sm text-sage">{item.description}</p>
+                  <p className="font-body text-sm text-white/90">{item.description}</p>
                 </GlassCard>
               </ScrollReveal>
             ))}
@@ -259,7 +259,7 @@ const Home = () => {
                     {item.icon}
                   </div>
                   <h3 className="font-display text-xl text-white mb-3">{item.title}</h3>
-                  <p className="font-body text-sm text-sage">{item.description}</p>
+                  <p className="font-body text-sm text-white/90">{item.description}</p>
                 </GlassCard>
               </ScrollReveal>
             ))}
@@ -276,7 +276,7 @@ const Home = () => {
             <h2 className="font-display text-[clamp(28px,4vw,46px)] text-white mb-4">
               Book an Appointment
             </h2>
-            <p className="font-accent italic text-lg text-sage">
+            <p className="font-accent italic text-lg text-white/90">
               Talk to our wellness experts and find the perfect routine for you.
             </p>
           </ScrollReveal>

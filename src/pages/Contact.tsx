@@ -143,7 +143,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-display text-lg text-white">Available Worldwide</p>
-                      <p className="font-body text-sm text-sage">Expanding globally, coming soon near you.</p>
+                      <p className="font-body text-sm text-white/80">Expanding globally, coming soon near you.</p>
                     </div>
                   </div>
                 </div>
@@ -247,7 +247,7 @@ const Contact = () => {
                       openFaq === index ? 'max-h-40 mt-4 opacity-100' : 'max-h-0 opacity-0'
                     }`}
                   >
-                    <p className="font-body text-sage leading-relaxed">{faq.answer}</p>
+                    <p className="font-body text-white/90 leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
               </ScrollReveal>
