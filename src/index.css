@@ -22,10 +22,10 @@
     --mist: 213 33% 94%;
     
     /* Glass Properties */
-    --glass-bg: 0 0% 100% / 0.08;
-    --glass-bg-hover: 0 0% 100% / 0.14;
-    --glass-border: 0 0% 100% / 0.20;
-    --glass-border-glow: 191 64% 85% / 0.40;
+    --glass-bg: 0 0% 100% / 0.04;
+    --glass-bg-hover: 0 0% 100% / 0.08;
+    --glass-border: 0 0% 100% / 0.12;
+    --glass-border-glow: 191 64% 85% / 0.25;
     --shadow-depth: 150 32% 18% / 0.18;
     
     /* ===== SEMANTIC TOKENS ===== */

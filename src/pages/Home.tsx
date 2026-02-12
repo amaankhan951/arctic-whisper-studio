@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDown, Leaf, Snowflake, Globe, Users, Dumbbell, Plane, Briefcase, Recycle, Heart } from 'lucide-react';
+import { ChevronDown, Leaf, Snowflake, Globe, Users, Dumbbell, Plane, Briefcase, Recycle, Heart, MessageCircle } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 import GlassCard from '@/components/GlassCard';
 import { toast } from 'sonner';
@@ -331,6 +331,15 @@ const Home = () => {
                 >
                   {isSubmitting ? '✓ Booked!' : 'Book Now'}
                 </button>
+                <a
+                  href="https://wa.me/919175540053?text=Hi%20Thanda%20Kapda%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-glass w-full text-center flex items-center justify-center gap-2"
+                >
+                  <MessageCircle size={16} />
+                  Or Book via WhatsApp
+                </a>
               </form>
             </GlassCard>
           </ScrollReveal>
