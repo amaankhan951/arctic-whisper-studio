@@ -1,7 +1,6 @@
 import ScrollReveal from '@/components/ScrollReveal';
 import GlassCard from '@/components/GlassCard';
 import { Leaf, Globe, Heart } from 'lucide-react';
-import ourStoryImage from '@/assets/our-story-woman.png';
 
 const About = () => {
   return (
@@ -36,27 +35,9 @@ const About = () => {
 
       {/* Story Section */}
       <section className="relative z-10 py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-            {/* Image Card */}
-            <ScrollReveal className="h-full">
-              <GlassCard className="h-full overflow-hidden group">
-                <div className="relative h-full min-h-[500px] overflow-hidden">
-                  <img
-                    src={ourStoryImage}
-                    alt="Our Story - Traditional Indian Heritage"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-                  {/* Warm tone overlay */}
-                  <div className="absolute inset-0 bg-amber-900/10 mix-blend-overlay" />
-                </div>
-              </GlassCard>
-            </ScrollReveal>
-
-            {/* Text Card */}
-            <ScrollReveal delay={150} className="h-full">
-              <GlassCard className="p-8 lg:p-10 h-full" hover={false}>
+        <div className="max-w-3xl mx-auto">
+          <ScrollReveal>
+            <GlassCard className="p-8 lg:p-10" hover={false}>
                 {/* Pull Quote */}
                 <div className="border-l-[3px] border-pine pl-6 mb-8">
                   <p className="font-accent italic text-xl lg:text-2xl text-white/90 leading-relaxed">
@@ -79,9 +60,8 @@ const About = () => {
                     We're rooted in Indian heritage but built for a global generation. We take the wisdom of our ancestors — who used nature's simplest gifts to cleanse and comfort — and give it a fresh, modern twist.
                   </p>
                 </div>
-              </GlassCard>
-            </ScrollReveal>
-          </div>
+            </GlassCard>
+          </ScrollReveal>
         </div>
       </section>
 

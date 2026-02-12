@@ -5,10 +5,7 @@ import { Droplets, Leaf, Package } from 'lucide-react';
 
 const Products = () => {
   const products = [
-    { packSize: 25, price: '₹150', isPopular: false, animationDelay: 0 },
-    { packSize: 100, price: '₹1,600', isPopular: true, animationDelay: 2.2 },
-    { packSize: 500, price: '₹3,000', isPopular: false, animationDelay: 4.5 },
-    { packSize: 1000, price: '₹10,000', isPopular: false, animationDelay: 6.8 },
+    { packSize: 25, price: '₹400', isPopular: false, animationDelay: 0 },
   ];
 
   return (
@@ -53,7 +50,7 @@ const Products = () => {
             </p>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-sm mx-auto">
             {products.map((product, index) => (
               <ScrollReveal key={product.packSize} delay={index * 120}>
                 <ProductCard
