@@ -118,7 +118,7 @@ const Home = () => {
             <h2 className="font-display text-[clamp(28px,4vw,46px)] text-white mb-4">
               Why Choose Thanda Kapda?
             </h2>
-            <p className="font-accent italic text-xl text-white/90">
+            <p className="font-accent italic text-xl text-white">
               Rooted in nature. Refined for you.
             </p>
           </ScrollReveal>
@@ -150,7 +150,7 @@ const Home = () => {
                     {item.icon}
                   </div>
                   <h3 className="font-display text-xl text-white mb-3">{item.title}</h3>
-                  <p className="font-body text-sm text-white/90 leading-relaxed">{item.description}</p>
+                  <p className="font-body text-sm text-white leading-relaxed">{item.description}</p>
                 </GlassCard>
               </ScrollReveal>
             ))}
@@ -187,7 +187,7 @@ const Home = () => {
             <ScrollReveal delay={150}>
               <GlassCard className="p-8">
                 <h3 className="font-display text-2xl text-white mb-4">Cooling Rituals</h3>
-                <p className="font-body text-white/90 leading-relaxed">
+                <p className="font-body text-white leading-relaxed">
                   Wet wipes designed to refresh, restore, and reconnect you with the ancient art of care.
                 </p>
               </GlassCard>
@@ -196,7 +196,7 @@ const Home = () => {
             <ScrollReveal delay={300}>
               <GlassCard className="p-8">
                 <h3 className="font-display text-2xl text-white mb-4">Sustainable Living</h3>
-                <p className="font-body text-white/90 leading-relaxed">
+                <p className="font-body text-white leading-relaxed">
                   Every product is a step toward a cleaner, greener tomorrow. No compromises on quality.
                 </p>
               </GlassCard>
@@ -229,7 +229,7 @@ const Home = () => {
                     {item.icon}
                   </div>
                   <h3 className="font-display text-lg text-white mb-2">{item.title}</h3>
-                  <p className="font-body text-sm text-white/90">{item.description}</p>
+                  <p className="font-body text-sm text-white">{item.description}</p>
                 </GlassCard>
               </ScrollReveal>
             ))}
@@ -262,7 +262,7 @@ const Home = () => {
                     {item.icon}
                   </div>
                   <h3 className="font-display text-xl text-white mb-3">{item.title}</h3>
-                  <p className="font-body text-sm text-white/90">{item.description}</p>
+                  <p className="font-body text-sm text-white">{item.description}</p>
                 </GlassCard>
               </ScrollReveal>
             ))}
@@ -279,7 +279,7 @@ const Home = () => {
             <h2 className="font-display text-[clamp(28px,4vw,46px)] text-white mb-4">
               Book an Appointment
             </h2>
-            <p className="font-accent italic text-lg text-white/90">
+            <p className="font-accent italic text-lg text-white">
               Talk to our wellness experts and find the perfect routine for you.
             </p>
           </ScrollReveal>

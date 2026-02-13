@@ -38,7 +38,7 @@ const Footer = () => {
               <p className="font-accent italic text-white/90 text-sm">
                 Essence of Pure Indulgence
               </p>
-              <p className="font-body text-sm text-white/80 leading-relaxed max-w-xs">
+              <p className="font-body text-sm text-white/90 leading-relaxed max-w-xs">
                 Eco-friendly wet wipes inspired by timeless Indian traditions. Pure, natural, and sustainable.
               </p>
             </div>
@@ -103,7 +103,7 @@ const Footer = () => {
 
           {/* Bottom Bar */}
           <div className="mt-10 pt-6 border-t border-white/10 text-center">
-            <p className="font-body text-xs text-white/65">
+            <p className="font-body text-xs text-white/80">
               © 2026 Thanda Kapda Co. All rights reserved.
             </p>
           </div>

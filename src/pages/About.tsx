@@ -46,7 +46,7 @@ const About = () => {
                 </div>
 
                 {/* Body Text */}
-                <div className="space-y-5 font-body text-base text-white leading-[1.85]">
+                <div className="space-y-5 font-body text-base text-white/95 leading-[1.85]">
                   <p>
                     A mother gently placing a damp cloth on her child's forehead, a grandfather wiping his hands before sharing a mango, or a sibling passing a cool towel after an afternoon of cricket in the sun.
                   </p>
@@ -103,7 +103,7 @@ const About = () => {
                     {item.icon}
                   </div>
                   <h3 className="font-display text-xl text-white mb-3">{item.title}</h3>
-                  <p className="font-body text-sm text-white/90">{item.description}</p>
+                  <p className="font-body text-sm text-white">{item.description}</p>
                 </GlassCard>
               </ScrollReveal>
             ))}
