@@ -275,7 +275,7 @@ const Contact = () => {
                       openFaq === index ? 'max-h-40 mt-4 opacity-100' : 'max-h-0 opacity-0'
                     }`}
                   >
-                    <p className="font-body text-white/90 leading-relaxed">{faq.answer}</p>
+                    <p className="font-body text-white leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
               </ScrollReveal>
