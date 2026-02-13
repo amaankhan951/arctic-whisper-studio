@@ -88,7 +88,7 @@ const LoadingScreen = ({ onComplete, isShort = false }: LoadingScreenProps) => {
             textShadow: '0 2px 10px rgba(0,0,0,0.2)'
           }}
         >
-          THANDA KAPDA CO.
+          THANDA KAPDA
         </h1>
 
         {/* Tagline */}
