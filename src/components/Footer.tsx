@@ -32,7 +32,7 @@ const Footer = () => {
                   />
                 </svg>
                 <span className="font-display text-lg font-semibold text-white">
-                  THANDA KAPDA CO.
+                  THANDA KAPDA
                 </span>
               </div>
               <p className="font-accent italic text-white/90 text-sm">
@@ -104,7 +104,7 @@ const Footer = () => {
           {/* Bottom Bar */}
           <div className="mt-10 pt-6 border-t border-white/10 text-center">
             <p className="font-body text-xs text-white/80">
-              © 2026 Thanda Kapda Co. All rights reserved.
+              © 2026 Thanda Kapda. All rights reserved.
             </p>
           </div>
         </div>

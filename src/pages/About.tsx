@@ -54,7 +54,7 @@ const About = () => {
                     These aren't just routines — they're rituals of love, of refreshment, of connection. And at the heart of each moment? The humble <span className="text-glacier font-medium">thanda kapda</span>.
                   </p>
                   <p>
-                    At Thanda Kapda Co., we didn't invent the idea — we simply reimagined it. Inspired by these timeless acts of care, we created a brand that honors the past while embracing the future.
+                    At Thanda Kapda, we didn't invent the idea — we simply reimagined it. Inspired by these timeless acts of care, we created a brand that honors the past while embracing the future.
                   </p>
                   <p>
                     We're rooted in Indian heritage but built for a global generation. We take the wisdom of our ancestors — who used nature's simplest gifts to cleanse and comfort — and give it a fresh, modern twist.
