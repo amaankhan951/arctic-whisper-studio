@@ -34,7 +34,7 @@ const About = () => {
       <div className="section-mist" />
 
       {/* Story Section */}
-      <section className="relative z-10 py-20 px-6">
+      <section className="relative z-10 py-20 px-6" style={{ background: 'linear-gradient(180deg, rgba(10,18,22,0.55) 0%, rgba(10,18,22,0.4) 100%)' }}>
         <div className="max-w-3xl mx-auto">
           <ScrollReveal>
             <GlassCard className="p-8 lg:p-10" hover={false}>
@@ -68,7 +68,7 @@ const About = () => {
       <div className="section-mist" />
 
       {/* Values Section */}
-      <section className="relative z-10 py-20 px-6">
+      <section className="relative z-10 py-20 px-6" style={{ background: 'linear-gradient(180deg, rgba(10,18,22,0.5) 0%, rgba(10,18,22,0.35) 100%)' }}>
         <div className="max-w-6xl mx-auto">
           <ScrollReveal className="text-center mb-12">
             <h2 className="font-display text-[clamp(28px,4vw,46px)] text-white">
@@ -114,7 +114,7 @@ const About = () => {
       <div className="section-mist" />
 
       {/* Vision Section */}
-      <section className="relative z-10 py-20 px-6">
+      <section className="relative z-10 py-20 px-6" style={{ background: 'linear-gradient(180deg, rgba(10,18,22,0.55) 0%, rgba(10,18,22,0.4) 100%)' }}>
         <div className="max-w-2xl mx-auto">
           <ScrollReveal>
             <GlassCard className="p-10 text-center" hover={false}>
