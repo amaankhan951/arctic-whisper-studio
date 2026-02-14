@@ -53,11 +53,25 @@ const Navigation = () => {
           to="/" 
           className="flex items-center gap-3 group transition-all duration-300"
         >
-          <img 
-            src="/favicon-32x32.png" 
-            alt="Thanda Kapda Logo" 
-            className="w-7 h-7 object-contain invert transition-all duration-300 group-hover:drop-shadow-[0_0_8px_hsl(191,64%,85%)]"
-          />
+          <svg 
+            width="28" 
+            height="28" 
+            viewBox="0 0 64 64" 
+            fill="none"
+            className="transition-all duration-300 group-hover:drop-shadow-[0_0_8px_hsl(191,64%,85%)]"
+          >
+            <path
+              d="M32 4C32 4 12 28 12 40C12 52 21 60 32 60C43 60 52 52 52 40C52 28 32 4 32 4Z"
+              fill="hsl(150, 32%, 18%)"
+            />
+            <path
+              d="M32 12C32 12 18 30 18 40C18 48 24 54 32 54"
+              stroke="hsl(135, 18%, 67%)"
+              strokeWidth="2"
+              fill="none"
+              opacity="0.6"
+            />
+          </svg>
           <span className="font-display text-lg font-semibold text-white tracking-wide">
             THANDA KAPDA
           </span>

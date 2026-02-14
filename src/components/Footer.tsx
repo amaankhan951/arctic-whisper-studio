@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Mail, Phone } from 'lucide-react';
-import logoIcon from '@/assets/logo-icon.png';
+import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,13 +7,30 @@ const Footer = () => {
       {/* Section divider */}
       <div className="section-mist" />
       
-      <div className="py-12 px-6 md:px-12 rounded-none" style={{ background: 'rgba(10, 18, 22, 0.85)', backdropFilter: 'blur(20px)' }}>
+      <div className="glass-card-static py-12 px-6 md:px-12 rounded-none border-x-0 border-b-0">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
             {/* Brand Info */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <img src={logoIcon} alt="Thanda Kapda Logo" className="w-8 h-8 object-contain invert" />
+                <svg 
+                  width="32" 
+                  height="32" 
+                  viewBox="0 0 64 64" 
+                  fill="none"
+                >
+                  <path
+                    d="M32 4C32 4 12 28 12 40C12 52 21 60 32 60C43 60 52 52 52 40C52 28 32 4 32 4Z"
+                    fill="hsl(150, 32%, 18%)"
+                  />
+                  <path
+                    d="M32 12C32 12 18 30 18 40C18 48 24 54 32 54"
+                    stroke="hsl(135, 18%, 67%)"
+                    strokeWidth="2"
+                    fill="none"
+                    opacity="0.6"
+                  />
+                </svg>
                 <span className="font-display text-lg font-semibold text-white">
                   THANDA KAPDA
                 </span>
@@ -54,7 +70,7 @@ const Footer = () => {
               <div className="flex flex-col gap-3">
                 <a 
                   href="tel:+919175540053" 
-                  className="flex items-center gap-3 text-white/80 hover:text-white transition-colors duration-300 group"
+                  className="flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300 group"
                 >
                   <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
                     <Phone size={16} />

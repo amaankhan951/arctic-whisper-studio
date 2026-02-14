@@ -83,7 +83,7 @@ const Contact = () => {
       <div className="section-mist" />
 
       {/* Contact Section */}
-      <section className="relative z-10 py-20 px-6" style={{ background: 'linear-gradient(180deg, rgba(10,18,22,0.55) 0%, rgba(10,18,22,0.4) 100%)' }}>
+      <section className="relative z-10 py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Information */}
@@ -243,7 +243,7 @@ const Contact = () => {
       <div className="section-mist" />
 
       {/* FAQ Section */}
-      <section className="relative z-10 py-20 px-6" style={{ background: 'linear-gradient(180deg, rgba(10,18,22,0.5) 0%, rgba(10,18,22,0.35) 100%)' }}>
+      <section className="relative z-10 py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <ScrollReveal className="text-center mb-12">
             <h2 className="font-display text-[clamp(28px,4vw,42px)] text-white">

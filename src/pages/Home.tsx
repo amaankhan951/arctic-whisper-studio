@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDown, Leaf, Snowflake, Globe, Users, Dumbbell, Plane, Briefcase, Recycle, Heart, MessageCircle, UtensilsCrossed } from 'lucide-react';
+import { ChevronDown, Leaf, Snowflake, Globe, Users, Dumbbell, Plane, Briefcase, Recycle, Heart, MessageCircle } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 import GlassCard from '@/components/GlassCard';
 import { toast } from 'sonner';
@@ -112,7 +112,7 @@ const Home = () => {
       <div className="section-mist" />
 
       {/* Why Choose Section */}
-      <section className="relative z-10 py-20 px-6" style={{ background: 'linear-gradient(180deg, rgba(10,18,22,0.6) 0%, rgba(10,18,22,0.4) 100%)' }}>
+      <section className="relative z-10 py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal className="text-center mb-12">
             <h2 className="font-display text-[clamp(28px,4vw,46px)] text-white mb-4">
@@ -161,7 +161,7 @@ const Home = () => {
       <div className="section-mist" />
 
       {/* What We Offer Section */}
-      <section className="relative z-10 py-20 px-6" style={{ background: 'linear-gradient(180deg, rgba(10,18,22,0.5) 0%, rgba(10,18,22,0.35) 100%)' }}>
+      <section className="relative z-10 py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal className="text-center mb-12">
             <h2 className="font-display text-[clamp(28px,4vw,46px)] text-white">
@@ -208,7 +208,7 @@ const Home = () => {
       <div className="section-mist" />
 
       {/* Segments Section */}
-      <section className="relative z-10 py-20 px-6" style={{ background: 'linear-gradient(180deg, rgba(10,18,22,0.55) 0%, rgba(10,18,22,0.4) 100%)' }}>
+      <section className="relative z-10 py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal className="text-center mb-12">
             <h2 className="font-display text-[clamp(28px,4vw,46px)] text-white">
@@ -216,13 +216,12 @@ const Home = () => {
             </h2>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: <Users className="w-7 h-7" />, title: 'Families', description: 'Safe, gentle care for every member of your household.', delay: 0 },
               { icon: <Dumbbell className="w-7 h-7" />, title: 'Athletes & Fitness', description: 'Quick refresh after workouts. Cool. Clean. Instant.', delay: 100 },
               { icon: <Plane className="w-7 h-7" />, title: 'Travelers', description: 'Compact, hygienic, and always ready on the go.', delay: 200 },
               { icon: <Briefcase className="w-7 h-7" />, title: 'Professionals', description: 'Stay fresh and confident throughout your day.', delay: 300 },
-              { icon: <UtensilsCrossed className="w-7 h-7" />, title: 'Restaurants & Caterers', description: 'Hygienic, premium wipes for dining and hospitality.', delay: 400 },
             ].map((item) => (
               <ScrollReveal key={item.title} delay={item.delay}>
                 <GlassCard className="p-6 text-center h-full">
@@ -241,8 +240,8 @@ const Home = () => {
       <div className="section-mist" />
 
       {/* Sustainability Section */}
-      <section className="relative z-10 py-20 px-6" style={{ background: 'linear-gradient(180deg, rgba(10,18,22,0.6) 0%, rgba(10,18,22,0.45) 100%)' }}>
-        <div className="absolute inset-0" />
+      <section className="relative z-10 py-20 px-6">
+        <div className="absolute inset-0 bg-[rgba(12,20,26,0.18)]" />
         <div className="relative max-w-6xl mx-auto">
           <ScrollReveal className="text-center mb-12">
             <h2 className="font-display text-[clamp(28px,4vw,46px)] text-white mb-4">
@@ -274,7 +273,7 @@ const Home = () => {
       <div className="section-mist" />
 
       {/* Book Appointment Section */}
-      <section className="relative z-10 py-20 px-6" style={{ background: 'linear-gradient(180deg, rgba(10,18,22,0.5) 0%, rgba(10,18,22,0.4) 100%)' }}>
+      <section className="relative z-10 py-20 px-6">
         <div className="max-w-xl mx-auto">
           <ScrollReveal className="text-center mb-10">
             <h2 className="font-display text-[clamp(28px,4vw,46px)] text-white mb-4">

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import logoIcon from '@/assets/logo-icon.png';
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -51,11 +50,33 @@ const LoadingScreen = ({ onComplete, isShort = false }: LoadingScreenProps) => {
           className="opacity-0 animate-scale-fade-in"
           style={{ animationDelay: isShort ? '0s' : '0.2s', animationFillMode: 'forwards' }}
         >
-          <img 
-            src={logoIcon} 
-            alt="Thanda Kapda Logo" 
-            className="w-16 h-16 object-contain drop-shadow-lg"
-          />
+          <svg 
+            width="64" 
+            height="64" 
+            viewBox="0 0 64 64" 
+            fill="none"
+            className="drop-shadow-lg"
+          >
+            {/* Water droplet merged with leaf */}
+            <path
+              d="M32 4C32 4 12 28 12 40C12 52 21 60 32 60C43 60 52 52 52 40C52 28 32 4 32 4Z"
+              fill="hsl(150, 32%, 18%)"
+            />
+            <path
+              d="M32 12C32 12 18 30 18 40C18 48 24 54 32 54"
+              stroke="hsl(135, 18%, 67%)"
+              strokeWidth="2"
+              fill="none"
+              opacity="0.6"
+            />
+            {/* Leaf vein */}
+            <path
+              d="M32 20L32 48M32 30L26 36M32 38L38 44"
+              stroke="hsl(135, 18%, 67%)"
+              strokeWidth="1.5"
+              opacity="0.5"
+            />
+          </svg>
         </div>
 
         {/* Brand Name */}
